@@ -38,7 +38,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(if|unless|loop|break|return|switch|case|default|else|next|do|continue|or|and|cas)\b</string>
+			<string>\b(if|unless|loop|break|return|switch|case|default|else|next|do|continue|or|and|cas|for)\b</string>
 			<key>name</key>
 			<string>keyword.control.three</string>
 		</dict>
@@ -88,11 +88,38 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
+					<string>support.three</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
 					<string>entity.name.function.three</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(def)\s+(\w+)</string>
+			<string>(def)(:func)?\s+(\w+)</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.three</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.type.three</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(def)(:type)\s+(\w+)</string>
 		</dict>
 		<dict>
 			<key>captures</key>
