@@ -38,7 +38,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(if|unless|loop|break|return|switch|case|default|else|next|do|continue|or|and|cas|for)\b</string>
+			<string>\b(if|unless|loop|break|return|switch|case|default|else|do|continue|or|and|cas|for)\b</string>
 			<key>name</key>
 			<string>keyword.control.three</string>
 		</dict>
@@ -127,6 +127,28 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
+					<string>keyword</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.three</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>constant.three</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(def)(:value)\s+(\w+)</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
 					<string>support.function</string>
 				</dict>
 			</dict>
@@ -144,6 +166,30 @@
 			</dict>
 			<key>match</key>
 			<string>\b(linkage|include)\b</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.builtin.three</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\b(sizeof)\b</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>variable.three</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\b(self)\b</string>
 		</dict>
 		<dict>
 			<key>begin</key>
